@@ -30,7 +30,6 @@ body {
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   /* To create a traingle using clip-path */
@@ -69,7 +68,6 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-
   animation: moveInLeft 1s ease-out;
 
   /* animation-name: moveInLeft;
@@ -82,7 +80,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
-
   animation: moveInRight 1s ease-out;
 
   /* animation-name: moveInRight;
