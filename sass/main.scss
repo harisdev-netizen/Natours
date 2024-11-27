@@ -1,3 +1,9 @@
+$color-primary: #55C57A;
+$color-primary-light: #7ED56F;
+$color-primary-dark: #28B485;
+$color-grey-dark: #777;
+$color-white: #FFF;
+
 *,
 *::after,
 *::before {
@@ -14,15 +20,19 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
+
   box-sizing: border-box;
 }
 
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../assets/img/hero.jpg);
+  background-image: linear-gradient(to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)),
+    url(../assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -47,8 +57,9 @@ body {
 }
 
 .heading-primary {
-  color: #FFF;
+  color: $color-white;
   text-transform: uppercase;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
@@ -74,37 +85,45 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   80% {
     transform: translate(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   80% {
     transform: translate(-1rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -112,24 +131,24 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   border-radius: 10rem;
-  transition: all 0.2s;
+  transition: all .2s;
   position: relative;
   font-size: 1.6rem;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn--white {
-  background-color: #FFF;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey-dark;
 }
 
 .btn::after {
@@ -142,11 +161,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: all .4s;
 }
 
 .btn--white::after {
-  background-color: #FFF;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
@@ -155,8 +174,6 @@ body {
 }
 
 .btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
-
-/*# sourceMappingURL=style.css.map */
