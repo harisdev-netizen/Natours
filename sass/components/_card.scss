@@ -2,10 +2,10 @@
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: 51rem;
 
   &__side {
-    height: 50rem;
+    height: 51rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -124,5 +124,30 @@
         }
       }
     }
+  }
+
+  // CARD CTA
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
