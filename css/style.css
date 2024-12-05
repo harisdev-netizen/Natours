@@ -139,6 +139,22 @@ body {
   margin-top: 10rem !important;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -416,7 +432,6 @@ body {
 .story__img {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
-  backface-visibility: hidden;
   transition: all 0.5s;
 }
 .story__text {
@@ -532,7 +547,23 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../assets/img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem;
+}
+.book__form {
+  width: 50%;
+  padding: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
