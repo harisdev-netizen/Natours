@@ -85,7 +85,6 @@
     }
   }
 
-
   //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     transform: scale(80);
@@ -95,7 +94,6 @@
     opacity: 1;
     width: 100%;
   }
-
 
   //ICON
   &__icon {
@@ -121,7 +119,6 @@
 
     &::before { top: -.8rem; }
     &::after { top: .8rem; }
-    
   }
 
   &__button:hover &__icon::before {
