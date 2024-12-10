@@ -23,7 +23,7 @@
 
     @include respond(phone) {
       top: 3rem;
-      right: 4rem;
+      right: 2rem;
     }
   }
 
@@ -48,7 +48,7 @@
 
     @include respond(phone) {
       top: 3.5rem;
-      right: 4rem;
+      right: 3rem;
     }
   }
 
